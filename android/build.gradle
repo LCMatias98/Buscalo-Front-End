@@ -1,3 +1,18 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+plugins {
+    // Complemento para Google Services en el nivel de proyecto
+    id 'com.google.gms.google-services' version '4.4.2' apply false
+}
+
 allprojects {
     repositories {
         google()
@@ -6,10 +21,9 @@ allprojects {
 }
 
 rootProject.buildDir = "../build"
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
     project.evaluationDependsOn(":app")
 }
 

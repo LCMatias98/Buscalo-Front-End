@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "225628602809",
+    "project_id": "buscalo-b983c",
+    "storage_bucket": "buscalo-b983c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225628602809:android:49b4d232f644c50356f668",
+        "android_client_info": {
+          "package_name": "com.example.buscalo_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsfSvSg61WyRTxVkdWiDDcbXNF107CBpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

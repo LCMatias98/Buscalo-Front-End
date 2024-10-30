@@ -1,6 +1,20 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import './Interfaces/login_screen.dart';
+import './services/google_signin_service.dart';
+
+void iniciarSesionGoogle() async {
+  final GoogleSignInService googleSignInService = GoogleSignInService();
+  final userData = await googleSignInService.signInWithGoogle();
+
+  if (userData != null) {
+    print('ID: ${userData['id']}');
+    print('Email: ${userData['email']}');
+    print('Nombre: ${userData['name']}');
+    print('Foto URL: ${userData['photoUrl']}');
+    print('Token: ${userData['token']}');
+  }
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

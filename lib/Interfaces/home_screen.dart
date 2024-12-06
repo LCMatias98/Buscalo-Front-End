@@ -4,6 +4,7 @@ import 'package:latlong2/latlong.dart';
 
 import 'menu_widget.dart';
 import 'notification_icon.dart';
+import 'found_object_form.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -54,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         );
       case 2:
-        return Center(child: Text('Encontré un Objeto'));
+        return FoundObjectForm(); // Mostrar el formulario aquí
       case 3:
         return Center(child: Text('Mi Perfil'));
       default:
